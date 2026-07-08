@@ -1,0 +1,6 @@
+@shapes_HostAddress = http://localhost:5226
+
+GET {{shapes_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

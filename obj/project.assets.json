@@ -2621,19 +2621,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TUHLOPUZ\\.nuget\\packages\\": {}
+    "/root/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TUHLOPUZ\\Desktop\\shapes\\shapes\\shapes.csproj",
+      "projectUniqueName": "/src/shapes.csproj",
       "projectName": "shapes",
-      "projectPath": "C:\\Users\\TUHLOPUZ\\Desktop\\shapes\\shapes\\shapes.csproj",
-      "packagesPath": "C:\\Users\\TUHLOPUZ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TUHLOPUZ\\Desktop\\shapes\\shapes\\obj\\",
+      "projectPath": "/src/shapes.csproj",
+      "packagesPath": "/root/.nuget/packages/",
+      "outputPath": "/src/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\TUHLOPUZ\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/root/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -2703,7 +2703,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.301/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

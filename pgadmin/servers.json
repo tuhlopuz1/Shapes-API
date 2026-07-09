@@ -1,0 +1,13 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "shapes (local)",
+      "Group": "Servers",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "shapes",
+      "Username": "postgres",
+      "SSLMode": "prefer"
+    }
+  }
+}

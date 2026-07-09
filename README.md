@@ -2,13 +2,16 @@
 
 `docker-compose -f docker-compose.dev.yml up --build`
 
+### pgAdmin on dev build
+
+pgAdmin доступен на `http://localhost:5050` (`admin@admin.com` / `admin`). Сервер `shapes (local)` уже зарегистрирован (см. `pgadmin/servers.json`) — при первом подключении спросит пароль от БД: `postgres`
+
 
 ## Run production build
 
 `cp .env.example .env`
 
 `docker-compose up -d -build`
-
 
 ## API
 

@@ -3,9 +3,8 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0
 WORKDIR /src
 
 ENV ASPNETCORE_ENVIRONMENT=Development
-ENV DOTNET_USE_POLLING_FILE_WATCHER=true
 ENV ASPNETCORE_URLS=http://+:8080
 
 EXPOSE 8080
 
-ENTRYPOINT ["dotnet", "watch", "run", "--no-launch-profile"]
+ENTRYPOINT ["dotnet", "run", "--no-launch-profile"]

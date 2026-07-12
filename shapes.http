@@ -23,7 +23,7 @@ Content-Type: application/json
 }
 
 
-### Создать прямоугольник
+### Создать треугольник
 POST {{shapes_HostAddress}}/shapes/triangles
 Content-Type: application/json
 

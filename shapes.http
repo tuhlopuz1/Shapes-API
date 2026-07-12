@@ -1,6 +1,47 @@
 @shapes_HostAddress = http://localhost:5226
 
-GET {{shapes_HostAddress}}/weatherforecast/
-Accept: application/json
+### Создать окружность
+POST {{shapes_HostAddress}}/shapes/circles
+Content-Type: application/json
 
-###
+{
+  "centerX": 0.1,
+  "centerY": 0.1,
+  "diameter": 0.1
+}
+
+
+### Создать прямоугольник
+POST {{shapes_HostAddress}}/shapes/rectangles
+Content-Type: application/json
+
+{
+  "topLeftX": 0.1,
+  "topLeftY": 0.1,
+  "bottomRightX": 0.1,
+  "bottomRightY": 0.1
+}
+
+
+### Создать прямоугольник
+POST {{shapes_HostAddress}}/shapes/triangles
+Content-Type: application/json
+
+{
+  "x1": 0.1,
+  "y1": 0.1,
+  "x2": 0.1,
+  "y2": 0.1,
+  "x3": 0.1,
+  "y3": 0.1
+}
+
+
+### Получить фигуру по id
+GET {{shapes_HostAddress}}/shapes/1
+Content-Type: application/json
+
+
+### Получить сумму площадей всех фигур
+GET {{shapes_HostAddress}}/shapes/area
+Content-Type: application/json

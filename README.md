@@ -6,12 +6,11 @@
 
 pgAdmin доступен на `http://localhost:5050` (`admin@admin.com` / `admin`). Сервер `shapes (local)` уже зарегистрирован (см. `pgadmin/servers.json`) — при первом подключении спросит пароль от БД: `postgres`
 
-
 ## Run production build
 
 `cp .env.example .env`
 
-`docker-compose up -d -build`
+`docker-compose up -d --build`
 
 ## API
 
@@ -70,4 +69,4 @@ GET /shapes/area
 ## Архитектура
 
 - Хранение - TPT (Table Per Type): базовая таблица `Shapes` (`Id`, `Area`) + отдельные таблицы `Circles`/`Rectangles`/`Triangles` со своей геометрией, связанные по `Id`.
-- `Area` считается один раз при создании фигуры и хранится в базовой таблице — подсчёт суммы площадей не требует JOIN'ов
+- `Area` считается один раз при создании фигуры и хранится в базовой таблице - подсчёт суммы площадей не требует JOIN'ов
